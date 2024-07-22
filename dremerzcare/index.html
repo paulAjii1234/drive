@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dermazcare</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="wrapper header-wrapper">
+            <div class="logo">
+                <a class="logo__link" href="index.html">Dermazcare</a>
+            </div>
+            <nav>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Our Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#faq" class="nav__link">FAQ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#appointment" class="nav__link">Book an Appointment</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="wrapper">
+                <div class="hero__wrapper">
+                    <span class="hero__subtitle">
+                        Skincare & Dermatology
+                    </span>
+                    <h1 class="hero__title">
+                        Get the dream skin you desire.
+                    </h1>
+
+                    <p class="hero__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="wrapper">
+                <div class="about__wrapper flex">
+                    <div class="col_left">
+                        <div class="about__description">
+                            <h2 class="section__heading">About Us</h2>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus? olestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.
+                            </p>
+                        </div>
+
+                        <div class="about__imgs">
+                            <img src="./assets/about__left-1.jpg" alt="">
+                            <img src="./assets/about__left-2.jpg" alt="">
+                            <img src="./assets/about__left-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col__right">
+                        <div class="about__img">
+                            <img src="./assets/about__img.jpg" alt="About Image">
+                        </div>
+
+                        <div class="overlay">
+                            <strong>10&plus;</strong>
+                            <span>Years of experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="wrapper">
+                <div class="services__wrapper flex">
+                    <div class="col__left">
+                        <div class="img__with-text">
+                            <img src="./assets/services__img-1.jpg" alt="">
+
+                            <div class="img__text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M37.7848 32.8H24.8V36H37.9176C38.2067 36.0142 38.492 35.9286 38.7255 35.7575C38.959 35.5863 39.1265 35.34 39.2 35.06V34.284C39.2 34.284 39.1904 32.8 37.7848 32.8ZM35.9888 32.168C36.8412 32.1667 37.6582 31.8271 38.2603 31.2238C38.8624 30.6205 39.2004 29.8028 39.2 28.9504C39.2 27.1688 37.76 25.732 35.9888 25.732C35.567 25.7327 35.1495 25.8166 34.7601 25.9787C34.3707 26.1409 34.0171 26.3782 33.7195 26.6771C33.4219 26.976 33.186 27.3306 33.0255 27.7207C32.865 28.1107 32.7829 28.5286 32.784 28.9504C32.784 30.7256 34.22 32.168 35.9888 32.168ZM29.2256 32C30.9104 32 32.2656 30.8128 32.2656 29.1304C32.2648 27.4512 30.9048 26.5704 29.2328 26.5576L24.8 27.1192V32H29.2256ZM14.8184 11.1464C16.7856 11.1464 18.3768 9.5464 18.3768 7.5728C18.3768 5.5992 16.7856 4 14.8184 4C12.8528 4 11.2592 5.5992 11.2592 7.5728C11.2592 9.5464 12.8528 11.1464 14.8184 11.1464ZM11.1848 22.7112L11.1528 22.6648L9.53999 18.9096L9.53759 26.4H14.3576L15.4104 25.28L12.5552 24.1808C11.8784 23.9264 11.3976 23.3504 11.1848 22.7112ZM12.2064 22.3744C12.3624 22.7248 12.6512 23.0088 13.0144 23.1392L18.516 25.1784C18.6836 25.2522 18.8641 25.2921 19.0472 25.2959C19.2303 25.2997 19.4123 25.2673 19.5829 25.2005C19.7534 25.1338 19.909 25.034 20.0409 24.9069C20.1727 24.7798 20.2782 24.6279 20.3512 24.46C20.5001 24.1196 20.5083 23.7342 20.374 23.3878C20.2397 23.0414 19.9738 22.7622 19.6344 22.6112L14.5584 20.6944L12.9904 16.9336L14.0128 16.5528L15.3416 19.7752L19.2 21.2056V17.268L21.248 18.4864L22.2688 23.6288C22.3276 23.8028 22.4203 23.9634 22.5415 24.1014C22.6627 24.2393 22.8101 24.3518 22.9751 24.4325C23.1401 24.5131 23.3195 24.5603 23.5028 24.5712C23.6861 24.5821 23.8698 24.5565 24.0432 24.496C24.3924 24.3718 24.6785 24.1149 24.8395 23.7811C25.0005 23.4472 25.0234 23.0634 24.9032 22.7128L23.7592 17.76C23.6842 17.4858 23.5274 17.241 23.3096 17.0584C22.7232 16.4088 19.7576 13.0928 19.5464 12.8712C19.2368 12.5608 18.5288 12 17.1912 12H12.3912C9.66319 12 9.13839 14.784 9.69599 16.2L12.2064 22.3744ZM24 27.2H2.37359C1.58639 27.2 0.799988 27.644 0.799988 28.6208V36H24V27.2Z" fill="#4F4F4F"/>
+                                </svg>
+
+                                <div>
+                                    <strong>
+                                        SPA Services
+                                    </strong>
+                                    <span>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="img__with-text">
+                            <img src="./assets/services__img-2.jpg" alt="">
+
+                            <div class="img__text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <mask id="mask0_1_93" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="1" width="34" height="38">
+                                    <path d="M35 36.6673V18.334C35 10.0498 28.2842 3.33398 20 3.33398C11.7158 3.33398 5 10.0498 5 18.334V36.6673" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20.0001 35.8346C24.6026 35.8346 28.3334 28.373 28.3334 19.168H11.6667C11.6667 28.373 15.3976 35.8346 20.0001 35.8346Z" fill="#555555" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </mask>
+                                    <g mask="url(#mask0_1_93)">
+                                    <path d="M0 0H40V40H0V0Z" fill="#4F4F4F"/>
+                                    </g>
+                                </svg>
+
+                                <div>
+                                    <strong>
+                                        Facial Treatments
+                                    </strong>
+                                    <span>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col__right">
+                        <h2 class="section__heading">Our Services</h2>
+                        <p class="section__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus? olestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.
+                        </p>
+
+                        <a href="#appointment" class="cta__appointment">
+                            Book an Appointmet
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <div class="flex other__services--wrapper">
+                    <div class="others__with-img">
+                        <div class="others__text">
+                            <h3 class="section__heading">Wellness</h3>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis 
+                            </p>
+                        </div>
+                        <img src="./assets/others-1.jpg" alt="">
+                    </div>
+
+                    <img class="middle" src="./assets/others-middle.jpg" alt="">
+
+                    <div class="others__with-img">
+                        <div class="others__text">
+                            <h3 class="section__heading">Beauty</h3>
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis 
+                            </p>
+                        </div>
+                        <img src="./assets/others-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <div class="wrapper">
+                <div class="faq__wrapper flex">
+                    <div class="col__left">
+                        <h2 class="section__heading mini__title">FAQ</h2>
+                        <h3 class="section__subtitle large__subtitle">
+                            Frequently Asked Questions
+                        </h3>
+
+                        <img src="./assets/faq__img.jpg" alt="">
+                    </div>
+                    <div class="col__right">
+                        <h3 class="section__subtitle">Hair</h3>
+
+                        <div class="accordion">
+                            <div class="accordion__title">
+                                <h4 class="accordion__heading">
+                                    I want to know more on skin types
+                                </h4>
+
+                                <i class="bx bx-plus"></i>
+                            </div>
+                            <p class="accordion__panel">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l.
+                            </p>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion__title">
+                                <h4 class="accordion__heading">
+                                    I want to know more on skin types
+                                </h4>
+
+                                <i class="bx bx-plus"></i>
+                            </div>
+                            <p class="accordion__panel">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l.
+                            </p>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion__title">
+                                <h4 class="accordion__heading">
+                                    I want to know more on skin types
+                                </h4>
+
+                                <i class="bx bx-plus"></i>
+                            </div>
+                            <p class="accordion__panel">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="appointment">
+            <div class="wrapper">
+                <div class="appointment__wrapper flex">
+                    <div class="col__left">
+                        <h2 class="section__heading mini__title">
+                            VISIT US
+                        </h2>
+                        <h3 class="section__subtitle large__subtitle">
+                            Book An Appointment
+                        </h3>
+
+                        <form class="contact__form">
+                            <div class="form__control">
+                                <label for="name">
+                                    Name
+                                </label>
+
+                                <input type="text" name="name" id="name" placeholder="John Doe">
+                            </div>
+
+                            <div class="double__input">
+                                <div class="form__control">
+                                    <label for="email">
+                                        Email
+                                    </label>
+    
+                                    <input type="email" name="email" id="email" placeholder="email@example.com">
+                                </div>
+
+                                <div class="form__control">
+                                    <label for="seats">
+                                        Number of Seats
+                                    </label>
+    
+                                    <select name="seats" id="seats">
+                                        <option value="one">1</option>
+                                        <option value="two">2</option>
+                                        <option value="three">3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="double__input">
+                                <div class="form__control">
+                                    <label for="day">
+                                        Choose Day
+                                    </label>
+    
+                                    <input type="date" name="day" id="day" value="2000-01-31">
+                                </div>
+
+                                <div class="form__control">
+                                    <label for="time">
+                                        Pick Time
+                                    </label>
+    
+                                    <input type="time" name="time" id="time" value="00:00">
+                                </div>
+                            </div>
+
+                            <div class="form__control">
+                                <label for="comment">
+                                    Comment
+                                </label>
+
+                                <textarea id="comment" name="comment" placeholder="Comments here..."></textarea>
+                            </div>
+
+                            <button type="submit">
+                                SEND
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="col__right">
+                        <img src="./assets/appointment.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer__wrapper">
+                <div class="col__left">
+                    <div class="logo">
+                        <a class="logo__link" href="index.html">Dermazcare</a>
+                    </div>
+
+                    <strong>Let's keep in touch</strong>
+                    <span>Get glowing with our latest products and exclusive events</span>
+
+                    <div class="form__control">
+                        <input type="email" name="email" placeholder="Email Address">
+                        <button>Subscribe</button>
+                    </div>
+
+                    <div class="privacy">
+                        <a href="#" class="privacy__link">
+                            Privacy
+                        </a>
+                        <a href="#" class="terms__link">
+                            Terms and Conditions
+                        </a>
+                    </div>
+                </div>
+                <div class="col__right">
+                    <div class="top">
+                        <nav>
+                            <ul class="nav__list">
+                                <li class="nav_item">
+                                    <a href="index.html" class="nav__link">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#" class="nav__link">
+                                        Shop
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#" class="nav__link">
+                                        Portfolio
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="contact">
+                            <h4 class="footer__heading">
+                                Contact
+                            </h4>
+        
+                            <ul class="nav__list">
+                                <li class="nav_item">
+                                    <a href="mailto:info@bankfit.com" class="nav__link">
+                                        info@bankfit.com
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h4 class="footer__heading">
+                                Address
+                            </h4>
+        
+                            <ul class="nav__list">
+                                <li class="nav_item">
+                                    <span class="nav__link">
+                                        2334 Little Canada, MN, USA.
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="socials">
+                            <h4 class="footer__heading">
+                                Follow Us
+                            </h4>
+
+                            <ul class="nav__list">
+                                <li class="nav_item">
+                                    <a href="#" class="nav__link">
+                                        <i class="bx bxl-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#" class="nav__link">
+                                        <i class="bx bxl-twitter"></i>
+                                    </a>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <p>&copy;
+                            <strong>Z-SKINCARE</strong>
+                            — All Rights Reserved
+                            <span class="date"></span>
+                        </p>
+
+                        <button class="up__btn">
+                            <i class="bx bx-chevron-up"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
