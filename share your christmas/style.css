@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --clr-black: hsla(0, 0%, 0%, 1);
+    --clr-black-alt: hsla(0, 0%, 12%, 1);
+    --clr-gray-1: hsla(0, 0%, 20%, 1);
+    --clr-gray-3: hsla(0, 0%, 51%, 1);
+    --clr-gray-6: hsla(0, 0%, 95%, 1);
+    --clr-white: hsla(0, 0%, 100%, 1);
+    --clr-green: hsla(137, 100%, 24%, 1);
+    --clr-red: hsla(0, 100%, 50%, 1);
+
+    --ff-urbanist: "Urbanist", sans-serif;
+    --ff-fatface: "Abril Fatface", serif;
+
+    --header: 5rem;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    font-family: var(--ff-urbanist);
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header);
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    background: var(--clr-white);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+button {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-family: var(--ff-urbanist);
+    cursor: pointer;
+}
+
+section {
+    padding-block: 4rem;
+}
+
+section.hero {
+    padding-top: calc(var(--header) + 4rem);
+}
+
+.wrapper {
+    width: 90rem;
+    margin-inline: auto;
+    padding-inline: 8.07rem;
+}
+
+.section__title {
+    color: var(--clr-green);
+    font-family: var(--ff-fatface);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 2.5rem;
+}
+
+.section__title::after,
+.section__title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1px;
+    background-color: var(--clr-green);
+}
+
+.section__title::before {
+    left: -1.2rem;
+}
+
+.section__title::after {
+    right: -1.2rem;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    width: 100%;
+    height: var(--header);
+    background-color: var(--clr-white);
+    padding-block: 0.57rem;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 3.86125rem;
+    height: 3.86125rem;
+    border: 0.37px solid var(--clr-black);
+    border-radius: 50%;
+
+    color: var(--clr-green);
+    font-family: var(--ff-fatface);
+    font-size: 1.10981rem;
+    line-height: 87.687%;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.logo > .black {
+    display: inline-block;
+    color: var(--clr-black);
+    position: relative;
+}
+
+.logo > .black::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: var(--clr-green);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.nav__item {
+    position: relative;
+}
+
+.nav__item:not(:last-of-type) {
+    padding-right: 2.5rem;
+    border-right: 2px solid var(--clr-black-alt);
+}
+
+.nav__item:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 50%;
+    height: 1.5px;
+    transition: all 0.5s;
+    background-color: var(--clr-black-alt);
+}
+
+.nav__link {
+    color: var(--clr-black-alt);
+    font-family: var(--ff-urbanist);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    text-transform: capitalize;
+}
+
+.donate__btn {
+    display: inline-block;
+    padding: 0.66rem 1.5rem;
+    color: var(--clr-white);
+    border-radius: 5rem;
+    border: 1px solid var(--clr-red);
+    background-color: var(--clr-red);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.donate__btn:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-red);
+}
+/* Hero */
+.hero {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url(./assets/hero.jpeg) lightgray 50% / cover no-repeat;
+    height: 55rem;
+}
+
+.text {
+    width: 80.32006rem;
+    height: 29.375rem;
+    background: url(./assets/hero__flower.png) lightgray 50% / cover no-repeat;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-white);
+    font-family: var(--ff-fatface);
+    margin-top: 9.13rem;
+}
+
+.hero__subtitle {
+    text-shadow: 2.35px 2.35px 5.875px var(--clr-black);
+    font-size: 1.7625rem;
+    line-height: 87.687%;
+    font-weight: 400;
+}
+
+.hero__title {
+    width: 39.3625rem;
+    text-align: center;
+    text-shadow: 2.35px 2.35px 5.875px rgba(0, 0, 0, 0.75);
+    font-size: 7.05rem;
+    line-height: 87.687%;
+    font-weight: 400;
+    margin-bottom: 1.76rem;
+}
+
+/* About Us */
+.about__wrapper {
+    display: flex;
+    gap: 1.69rem;
+    align-items: center;
+    height: 31.6rem;
+}
+.left__about,
+.right__volunteers,
+.left__contact {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: var(--clr-black);
+}
+
+.left__about-title {
+    font-family: var(--ff-fatface);
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.section__text {
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.05rem;
+}
+
+.right__about {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.right__about > * {
+    width: 21.6875rem;
+    height: 21.9375rem;
+    flex-shrink: 0;
+}
+
+.right__about > img:first-of-type {
+    transform: translate(5rem, 9.62rem);
+}
+
+/* Causes */
+.green__section {
+    background-color: hsla(137, 100%, 71%, 1);
+}
+
+.green__section .section__title {
+    color: var(--clr-black);
+}
+
+.causes__wrapper {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.cause__card {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.cause__card > img {
+    width: 5.95488rem;
+    height: 6rem;
+}
+
+/* Volunteers */
+.volunteers__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.left__volunteers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem 5rem;
+}
+
+.left__volunteers > img {
+    width: 7.90906rem;
+    height: 9rem;
+}
+
+/* Contact */
+.contact__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 1.5rem;
+    width: 36.75rem;
+}
+
+.double__group {
+    display: flex;
+    gap: 1rem;
+}
+
+.form__control {
+    width: 100%;
+}
+
+.form__control > label {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background-color: var(--clr-white);
+    width: 100%;
+    padding: 0.94rem 0.7rem;
+}
+
+.form__control > label > span {
+    color: var(--clr-gray-3);
+    font-family: var(--ff-urbanist);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.form__control > label > input,
+.form__control > label > textarea {
+    color: var(--clr-gray-3);
+    width: 100%;
+    border: none;
+    appearance: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: transparent;
+    font-family: var(--ff-urbanist);
+}
+
+.form__control > label > textarea {
+    height: 8.375rem;
+    resize: none;
+    line-height: 150%;
+}
+.submit__btn {
+    padding: 1rem 3rem;
+    align-self: flex-start;
+    gap: 0.625rem;
+    background-color: var(--clr-gray-1);
+    color: var(--clr-gray-6);
+    text-align: center;
+    font-family: var(--ff-urbanist);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid var(--clr-gray-1);
+    transition: all .5s;
+}
+
+.submit__btn:hover {
+    background-color: transparent;
+    color: var(--clr-gray-1);
+}
+
+footer {
+    background-color: var(--clr-black);
+    padding-block: 3.12rem;
+    color: var(--clr-white);
+}
+
+.top__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top__footer > .logo {
+    background-color: var(--clr-white);
+    border-color: var(--clr-white);
+}
+
+.newsletter {
+    width: 29.3rem;
+}
+
+.newsletter__title {
+    font-family: var(--ff-urbanist);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.06rem;
+    text-align: center;
+}
+
+.newsletter__form > input {
+    width: 19.4375rem;
+    padding: 0.625rem 1rem;
+    border-radius: 6.25rem;
+    background: var(--clr-white);
+    font-family: var(--ff-urbanist);
+    outline: none;
+}
+
+.subscribe__btn {
+    background-color: var(--clr-green);
+    color: var(--clr-white);
+    padding: 0.66rem 2.5rem;
+    border-radius: 6.25rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.socials__title {
+    color: var(--clr-white);
+    font-family: var(--ff-urbanist);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.socials__icon {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.socials__icon > a {
+    font-size: 1.5rem;
+    color: var(--clr-white);
+}
+
+.bottom__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--ff-urbanist);
+    margin-top: 2.5rem;
+}
+
+.copyright,
+.others > a {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.6875rem;
+}
+
+.copyright > .bold__text {
+    font-weight: 700;
+}
+
+.others {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.others > a {
+    color: var(--clr-white);
+    text-decoration: underline;
+}
+
+.others > a:hover {
+    text-decoration: none;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100dvh;
+    z-index: 1000;
+}
+
+.modal__wrapper {
+    background-color: var(--clr-white);
+    padding: 3.94rem 3.25rem;
+    border-radius: 1rem;
+    color: var(--clr-black);
+    text-align: center;
+}
+
+.modal__title {
+    font-family: var(--ff-fatface);
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 3rem;
+}
+
+.amount__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.31rem;
+}
+
+.amount__title {
+    color: var(--clr-black-alt);
+    font-family: var(--ff-urbanist);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+p.amount__title {
+    font-weight: 500;
+}
+
+.amount__prices {
+    display: grid;
+    gap: 1.31rem 2.5rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.amount__cost {
+    padding: 1rem 1.5rem;
+    border: 1px solid hsla(0, 0%, 73%, 1);
+    color: var(--clr-black-alt);
+    text-align: center;
+    font-family: var(--ff-urbanist);
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 100%;
+}
+
+.input__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1rem; */
+    background-color: hsla(0, 0%, 85%, 1);
+    padding-block: 1.19rem;
+}
+
+.currency,
+[name="price"] {
+    color: hsla(0, 0%, 42%, 1);
+    font-family: var(--ff-urbanist);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 100%;
+    width: 4rem;
+}
+
+input[name="price"] {
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.amount__btn {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    padding-block: 1.25rem;
+
+    font-family: var(--ff-urbanist);
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 100%;
+    text-transform: uppercase;
+    border: 1px solid var(--clr-black);
+    transition: all .5s;
+}
+
+.amount__btn:hover {
+    background-color: transparent;
+    color: var(--clr-black);
+}

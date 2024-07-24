@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <nav>
+                <a href="index.html" class="logo">
+                    <span>T</span>
+                    <span>TRAVEL</span>
+                </a>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="destination.html" class="nav__link">
+                            Destinations
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <button type="button" class="nav__link contact__btn">
+                            Contact Us
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="auth__link">
+                    <a href="login.html" class="nav__link">
+                        Login
+                    </a>
+
+                    <a href="signup.html" class="reg__link">
+                        Sign Up
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="wrapper">
+                <div class="hero__wrapper">
+                    <div class="hero__left hidden">
+                        <h1 class="hero__title">
+                            let's have a relaxing vacation with us!
+                        </h1>
+                        <p class="hero__text">
+                            A company engaged in travel that will make it easier for you when you want to vacation
+                        </p>
+                        <div class="hero__links">
+                            <a href="about.html" class="reg__link">
+                                Explore More
+                            </a>
+                            <div class="video">
+                                <div class="play">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="none">
+                                        <path d="M14 8L0.499999 15.7942L0.5 0.205771L14 8Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <span>Watch Video</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__right hidden">
+                        <img src="./assets/hero1.png" alt="">
+                        <div class="stacked__img">
+                            <img src="./assets/hero2.png" alt="">
+                            <img src="./assets/hero3.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="hero__overlay">
+                        <div class="hero__dropdown">
+                            <header class="dropdown__header">
+                                <h4 class="hero__dropdown-title">
+                                    location
+                                </h4>
+                                <i class="bx bx-chevron-down"></i>
+                            </header>
+    
+                            <ul class="dropdown__list">
+                                <li>Where you gonna go?</li>
+                                <li>Location 2</li>
+                                <li>Location 3</li>
+                            </ul>
+                        </div>
+    
+                        <div class="hero__dropdown">
+                            <header class="dropdown__header">
+                                <h4 class="hero__dropdown-title">
+                                    date
+                                </h4>
+                                <i class="bx bx-chevron-down"></i>
+                            </header>
+    
+                            <ul class="dropdown__list">
+                                <li>When will it start?</li>
+                                <li>Date 2</li>
+                                <li>Date 3</li>
+                            </ul>
+                        </div>
+    
+                        <div class="hero__dropdown">
+                            <header class="dropdown__header">
+                                <h4 class="hero__dropdown-title">
+                                    people
+                                </h4>
+                                <i class="bx bx-chevron-down"></i>
+                            </header>
+    
+                            <ul class="dropdown__list">
+                                <li>How many people?</li>
+                                <li>2 Adults</li>
+                                <li># Adults</li>
+                            </ul>
+                        </div>
+
+                        <button type="button" class="reg__link">
+                            Search Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <header class="section__header">
+                    <h2 class="section__title">
+                        choose the <span class="orange__text">best</span> place for vacation
+                    </h2>
+
+                    <p class="section__subtext">
+                        let's take a vacation before the work day starts again, go to the place you want.
+                    </p>
+                </header>
+
+                <div class="tabs">
+                    <button type="button" class="tab__btn active">
+                        Special Deals
+                    </button>
+
+                    <button type="button" class="tab__btn">
+                        Popular
+                    </button>
+
+                    <button type="button" class="tab__btn">
+                        Recommendation
+                    </button>
+
+                    <button type="button" class="tab__btn">
+                        Best Price
+                    </button>
+                </div>
+
+                <div class="places__cards">
+                    <div class="place__card hidden">
+                        <img src="./assets/kumano.png" alt="">
+                        <div class="info">
+                            <strong class="destination__name">
+                                Kumano Beach
+                            </strong>
+
+                            <div class="info__meta">
+                                <div class="price__rating">
+                                    <div class="stars">
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                    </div>
+
+                                    <div class="price">
+                                        <span>$1,100</span>
+                                        <span class="person">/person</span>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="view__btn">
+                                    View
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="place__card hidden">
+                        <img src="./assets/churfirsten.png" alt="">
+                        <div class="info">
+                            <strong class="destination__name">
+                                Churfirsten Mountain
+                            </strong>
+
+                            <div class="info__meta">
+                                <div class="price__rating">
+                                    <div class="stars">
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                    </div>
+
+                                    <div class="price">
+                                        <span>$2,300</span>
+                                        <span class="person">/person</span>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="view__btn">
+                                    View
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="place__card hidden">
+                        <img src="./assets/pantai.png" alt="">
+                        <div class="info">
+                            <strong class="destination__name">
+                                Pantai Kelan
+                            </strong>
+
+                            <div class="info__meta">
+                                <div class="price__rating">
+                                    <div class="stars">
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                    </div>
+
+                                    <div class="price">
+                                        <span>$1,400</span>
+                                        <span class="person">/person</span>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="view__btn">
+                                    View
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="place__card hidden">
+                        <img src="./assets/montjuic.png" alt="">
+                        <div class="info">
+                            <strong class="destination__name">
+                                Montjuic Statue
+                            </strong>
+
+                            <div class="info__meta">
+                                <div class="price__rating">
+                                    <div class="stars">
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                    </div>
+
+                                    <div class="price">
+                                        <span>$3,300</span>
+                                        <span class="person">/person</span>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="view__btn">
+                                    View
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why__travel">
+            <div class="wrapper">
+                <div class="why__travel-wrapper">
+                    <div class="why__left hidden">
+                        <img src="./assets/why__travel.png" alt="">
+                    </div>
+                    <div class="reasons hidden">
+                        <h2 class="section__title">
+                            Why <span class="orange__text">is</span> Travel ?
+                        </h2>
+
+                        <p class="section__subtext">
+                            A company engaged in travel that will make it easier for you when you want to vacation.
+                        </p>
+
+                        <div class="reasons__list">
+                            <div class="reason">
+                                <header class="reason__header">
+                                    <i class='bx bxs-down-arrow'></i>
+                                    <h3 class="reason__title">
+                                        Easy to book the destination
+                                    </h3>
+                                </header>
+
+                                <p class="reason__text">
+                                    We will make it easier for you to make a booking for a vacation to the place you are going to
+                                </p>
+                            </div>
+
+                            <div class="reason">
+                                <header class="reason__header">
+                                    <i class='bx bxs-down-arrow'></i>
+                                    <h3 class="reason__title">
+                                        safe from all kinds of dangers in the world
+                                    </h3>
+                                </header>
+
+                                <p class="reason__text">
+                                    We will make it easier for you to make a booking for a vacation to the place you are going to
+                                </p>
+                            </div>
+
+                            <div class="reason">
+                                <header class="reason__header">
+                                    <i class='bx bxs-down-arrow'></i>
+                                    <h3 class="reason__title">
+                                        cheaper payment from the shop next door
+                                    </h3>
+                                </header>
+
+                                <p class="reason__text">
+                                    We will make it easier for you to make a booking for a vacation to the place you are going to
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="diff__destinations">
+            <div class="wrapper">
+                <header class="diff__destinations-header">
+                    <h2 class="section__title">
+                        Explore Top Destination
+                    </h2>
+
+                    <a href="destination.html" class="reg__link">
+                        View All Destinations
+                    </a>
+                </header>
+
+                <div class="destinations__wrapper">
+                    <div class="destination__card hidden">
+                        <img src="./assets/tokyo.png" alt="">
+
+                        <div class="about__destination">
+                            <h3 class="destination__name">
+                                Tokyo
+                            </h3>
+
+                            <p class="destination__text">
+                                Sakura definitely has its commercial purposes, but its celebration has very strong.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="destination__card hidden">
+                        <img src="./assets/alaska.png" alt="">
+
+                        <div class="about__destination">
+                            <h3 class="destination__name">
+                                Alaska
+                            </h3>
+
+                            <p class="destination__text">
+                                Sakura definitely has its commercial purposes, but its celebration has very strong.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="destination__card hidden">
+                        <img src="./assets/oslo.png" alt="">
+
+                        <div class="about__destination">
+                            <h3 class="destination__name">
+                                Oslo
+                            </h3>
+
+                            <p class="destination__text">
+                                Sakura definitely has its commercial purposes, but its celebration has very strong.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="destination__card hidden">
+                        <img src="./assets/bali.png" alt="">
+
+                        <div class="about__destination">
+                            <h3 class="destination__name">
+                                Bali
+                            </h3>
+
+                            <p class="destination__text">
+                                Sakura definitely has its commercial purposes, but its celebration has very strong.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="destination__card hidden">
+                        <img src="./assets/los__angeles.png" alt="">
+
+                        <div class="about__destination">
+                            <h3 class="destination__name">
+                                Los Angeles
+                            </h3>
+
+                            <p class="destination__text">
+                                Sakura definitely has its commercial purposes, but its celebration has very strong.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="destination__card hidden">
+                        <img src="./assets/zurich.png" alt="">
+
+                        <div class="about__destination">
+                            <h3 class="destination__name">
+                                Zurich
+                            </h3>
+
+                            <p class="destination__text">
+                                Sakura definitely has its commercial purposes, but its celebration has very strong.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <div class="about__us-container why__travel-wrapper">
+                    <div class="why__left hidden">
+                        <img src="./assets/about__us-home.png" alt="">
+                    </div>
+
+                    <div class="reasons hidden">
+                        <span>about us</span>
+                        <h2 class="section__title">
+                            Enjoy your vacation and have a fun and extraordinary trip with us
+                        </h2>
+
+                        <p class="section__subtext">
+                            Enjoy a trip with us at a friendly price and also of the best quality,
+                            accompanied by a guide with the best quality in the world, explore
+                            this universe now
+                        </p>
+
+                        <a href="login.html" class="reg__link">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="wrapper">
+                <div class="newsletter__wrapper hidden">
+                    <h2 class="section__title">
+                        Subscribe to our newslwtter
+                    </h2>
+                    <p class="section__subtext">
+                        Get notification about tips, new destination and exclusive promo news just for you.
+                    </p>
+
+                    <form class="newsletter__form">
+                        <div class="newsletter__form-control">
+                            <label for="newsletter__email">
+                                <input type="email" placeholder="Enter your email address" id="newsletter__email">
+                            </label>
+
+                            <button type="submit" class="reg__link">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials__section">
+            <div class="wrapper">
+                <header class="testimonials__section-header">
+                    <h2 class="section__title">
+                        Travel from Customers
+                    </h2>
+
+                    <div class="controls">
+                        <button type="button" class="control__btn">
+                            <i class="bx bx-chevron-left"></i>
+                        </button>
+                        <button type="button" class="control__btn active">
+                            <i class="bx bx-chevron-right"></i>
+                        </button>
+                    </div>
+                </header>
+                
+                <div class="testimonial__carousel">
+                    <div class="testimonial__card">
+                        <div class="testimonial__img">
+                            <img src="./assets/ava.png" width="100%" height="100%" alt="Ava">
+                        </div>
+                        <h3 class="testimonial__name">
+                            Ava
+                        </h3>
+                        <p class="testimonial__text">
+                            `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                    </div>
+                    <div class="testimonial__card">
+                        <div class="testimonial__img">
+                            <img src="./assets/john.png" width="100%" height="100%" alt="John Doe">
+                        </div>
+                        <h3 class="testimonial__name">
+                            John Doe
+                        </h3>
+                        <p class="testimonial__text">
+                            `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                    </div>
+                    <div class="testimonial__card">
+                        <div class="testimonial__img">
+                            <img src="./assets/david.png" width="100%" height="100%" alt="David">
+                        </div>
+                        <h3 class="testimonial__name">
+                            David
+                        </h3>
+                        <p class="testimonial__text">
+                            `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                    </div>
+                    <div class="testimonial__card">
+                        <div class="testimonial__img">
+                            <img src="./assets/ronney.png" width="100%" height="100%" alt="Ronney">
+                        </div>
+                        <h3 class="testimonial__name">
+                            Ronney
+                        </h3>
+                        <p class="testimonial__text">
+                            `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners__logos">
+            <div class="wrapper">
+                <ul class="logos__wrapper hidden">
+                    <li><img src="./assets/logo 1.svg" alt=""></li>
+                    <li><img src="./assets/logo 2.svg" alt=""></li>
+                    <li><img src="./assets/logo 3.svg" alt=""></li>
+                    <li><img src="./assets/logo 4.svg" alt=""></li>
+                    <li><img src="./assets/logo 5.svg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer__wrapper">
+                <div class="left__footer">
+                    <a href="index.html" class="logo">
+                        <span>T</span>
+                        <span>TRAVEL</span>
+                    </a>
+
+                    <address>
+                        <div class="address__contact">
+                            <i class="bx bx-location-plus"></i>
+                            <span>221 B Santa Monica, Los Angeles</span>
+                        </div>
+
+                        <div class="address__contact">
+                            <i class="bx bx-phone"></i>
+                            <a href="tel:+1923234122">(+1) 923 2341 22</a>
+                        </div>
+
+                        <div class="address__contact">
+                            <i class="bx bx-envelope"></i>
+                            <a href="mailto:contact@travel.com">contact@travel.com</a>
+                        </div>
+                    </address>
+                </div>
+
+                <div class="right__footer">
+                    <div class="links">
+                        <h4 class="links__title">
+                            About
+                        </h4>
+
+                        <ul class="links__list">
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Help Centre</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links">
+                        <h4 class="links__title">
+                            Services
+                        </h4>
+
+                        <ul class="links__list">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links">
+                        <h4 class="links__title">
+                            Support
+                        </h4>
+
+                        <ul class="links__list">
+                            <li><a href="#">Privacy and Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Code of Conduct</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright__div">
+        <div class="wrapper">
+            <p class="copyright">
+                &copy; <span class="date"></span> travel All rights reserved.
+            </p>
+
+            <div class="copyright__socials">
+                <ul class="socials__list">
+                    <li>
+                        <a href="#">
+                            <i class="bx bxl-facebook"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="bx bxl-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="bx bxl-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal__container">
+            <div class="img__top"></div>
+
+            <header class="modal__header">
+                <h3 class="modal__title">
+                    contact us
+                </h3>
+
+                <p class="modal__description">
+                    You will get a response within 24 hours. We will explain in details how we can help you fuel and grow your brand within the stated budget.
+                </p>
+            </header>
+
+            <form class="contact__form">
+                <div class="contact__form-group">
+                    <label for="name">name</label>
+                    <input type="text" name="name" id="name" placeholder="John Doe">
+                </div>
+
+                <div class="contact__form-group">
+                    <label for="email">email address</label>
+                    <input type="email" name="email" id="email" placeholder="johndoe@email.com">
+                </div>
+
+                <div class="contact__form-group">
+                    <label for="phone">phone number</label>
+                    <input type="tel" name="phone" id="phone" placeholder="enter phone number">
+                </div>
+
+                <div class="contact__form-group">
+                    <label for="budget">budget</label>
+                    <input type="text" name="budget" id="budget" placeholder="What is your budget?">
+                </div>
+
+                <div class="contact__form-group">
+                    <label for="message">message</label>
+                    <textarea name="message" id="message" placeholder="Enter Message..."></textarea>
+                </div>
+
+                <button type="submit" class="submit__btn">
+                    <span>send enquiry</span>
+                    <i class="bx bx-right-arrow-alt"></i></button>
+            </form>
+        </div>
+    </div>
+</body>
