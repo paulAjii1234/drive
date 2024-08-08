@@ -399,6 +399,7 @@ main {
 .right__about > div:last-of-type > img:last-of-type {
     width: 15.6875rem;
     height: 13.8125rem;
+    object-fit: cover;
 }
 
 .right__about > div:first-of-type > img:last-of-type,
@@ -598,14 +599,14 @@ footer {
     background-color: hsla(0, 0%, 0%, 0.8);
 }
 
-.session__modal {
+.session__modal,
+.gallery__modal {
     display: none;
 }
 
-.gallery__modal {
-    /* display: flex; */
-    display: none;
-}
+/* .gallery__modal {
+    display: flex;
+} */
 
 .session__modal > .modal__container {
     background-color: var(--clr-neutral);
@@ -728,6 +729,7 @@ footer {
 }
 
 /* GALLERY MODAL */
+
 .gallery__modal > .modal__container {
     display: flex;
     align-items: center;
@@ -736,6 +738,7 @@ footer {
     width: 37.625rem;
     height: 37.5rem;
     flex-shrink: 0;
+    width: 75rem;
 }
 
 .gallery__modal .bx {
@@ -751,9 +754,19 @@ footer {
 }
 
 .img__display {
-    width: 58.75rem;
+    width: 60rem;
+    height: 37.4375rem;
+    position: relative;
 }
 
-.img__display > img {
+.img__display > .gallery__img {
     width: 58.75rem;
+    height: 37.4375rem;
+    opacity: 0;
+    position: absolute;
+}
+
+.gallery__img > img {
+    width: 100%;
+    height: 100%;
 }
