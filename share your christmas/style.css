@@ -37,6 +37,7 @@ body {
     width: 100%;
     height: 100dvh;
     background: var(--clr-white);
+    overflow-x: hidden;
 }
 
 ul {
@@ -222,6 +223,34 @@ nav {
 .hero {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url(./assets/hero.jpeg) lightgray 50% / cover no-repeat;
     height: 55rem;
+    position: relative;
+}
+
+.hero > .absolute__img {
+    position: absolute;
+    width: 9.1875rem;
+    height: 9.1875rem;
+    top: -1rem;
+    left: 35%;
+}
+
+.hero > .christmas__bell-1,
+.about > img:not(:nth-of-type(n + 3)),
+.volunteers > img {
+    position: absolute;
+    top: var(--header);
+    width: 6.25rem;
+    height: 5.875rem;
+}
+
+.hero > .christmas__bell-1:first-of-type,
+.about > img:first-of-type {
+    left: 2.25rem;
+}
+
+.hero > .christmas__bell-1:last-of-type,
+.about > img:nth-of-type(2) {
+    right: 2.25rem;
 }
 
 .text {
@@ -256,6 +285,25 @@ nav {
 }
 
 /* About Us */
+.about {
+    position: relative;
+}
+
+.about > img:nth-of-type(n + 3) {
+    position: absolute;
+    bottom: var(--header);
+    width: 6.25rem;
+    height: 5.875rem;
+}
+
+.about > img:nth-of-type(3) {
+    left: 2.25rem;
+}
+
+.about > img:nth-of-type(4) {
+    right: 2.25rem;
+}
+
 .about__wrapper {
     display: flex;
     gap: 1.69rem;
@@ -302,6 +350,10 @@ nav {
 }
 
 /* Causes */
+.causes {
+    position: relative;
+}
+
 .green__section {
     background-color: hsla(137, 100%, 71%, 1);
 }
@@ -330,7 +382,32 @@ nav {
     height: 6rem;
 }
 
+.causes > img {
+    height: 9.5rem;
+    width: 9.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.causes > img:first-of-type {
+    left: -4.75rem;
+}
+
+.causes > img:last-of-type {
+    right: -4.75rem;
+}
+
 /* Volunteers */
+.volunteers {
+    position: relative;
+}
+
+.volunteers > img {
+    left: -2rem;
+    top: -2rem;
+}
+
 .volunteers__wrapper {
     display: flex;
     align-items: center;
@@ -591,6 +668,7 @@ p.amount__title {
     font-size: 1.5rem;
     font-weight: 800;
     line-height: 100%;
+    cursor: pointer;
 }
 
 .input__price {
@@ -600,6 +678,17 @@ p.amount__title {
     /* gap: 1rem; */
     background-color: hsla(0, 0%, 85%, 1);
     padding-block: 1.19rem;
+}
+
+.payment__method {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.payment__method > label[for="visa"] {
+    display: flex;
+    align-items: center;
 }
 
 .currency,
@@ -636,4 +725,17 @@ input[name="price"] {
 .amount__btn:hover {
     background-color: transparent;
     color: var(--clr-black);
+}
+
+.animatable {
+    transform: translateX(1000%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.animatable.even {
+    transform: translateX(-1000%);
+}
+
+.animatable.show {
+    transform: translateX(0);
 }
